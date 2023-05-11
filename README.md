@@ -1,6 +1,6 @@
 # WRO_Future_Engineers_Xenoplex1
 
-## Motivation und Hintergrund
+## Motivation und Hintergrund:
 Im 21. Jahrhundert, in der Zeit der Digitalisierung und 
 Automatisierung sämtlicher Prozesse, rückt auch die Technik rund 
 um autonomes Fahren immer mehr in den Vordergrund der 
@@ -10,7 +10,8 @@ vereinfachte Abbild der Realität zeigt, wie komplex die für
 uns doch einfachen Vorgänge in Wirklichkeit sind. Aber genau 
 diese Schwierigkeit war für uns letztendlich der Anreiz, auch 
 diese Herausforderung zu bewältigen.
-Der Aufbau des Fahrzeugs 
+
+## Der Aufbau des Fahrzeugs: 
 Als Basis des Fahrzeugs dient das Chassis des autonomen 
 Fahrzeugs von fischertechnik. Der Mikrocontroller Arduino UNO 
 fungiert dabei als "Gehirn" des Fahrzeugs und steuert alle 
@@ -25,10 +26,11 @@ Die Bilderkennung und -auswertung übernimmt die Kamera Pixy
 V2.1 von CMU und Charmed Labs. Außerdem ist ein NiMH Akku von fischertechnik verbaut.
 benutzen wir eine PixyV2.1 und einen NiMH-Akku von 
 fischertechnik mit 8,4 Volt und 1800mAh.
-Programme:
+
+## Programme:
 Für jede Aufgabe haben wir ein Programm entwickelt, welches 
 speziell für die Aufgabe angepasst worden ist.
-Aufgabe 1:
+#### Aufgabe 1:
 Zu Beginn werden vorgefertigte Bibliotheken für Kompass und Servo 
 hinzugefügt, über die die Sensoren des Fahrzeugs angesteuert 
 werden können. Außerdem werden Variablen erstellt, z.B. für
@@ -54,7 +56,7 @@ Wand registriert. Mithilfe des Kompasses und den Ecken wird
 der Rundenzähler erhöht. Nach 3 vollständigen Runden, 
 beziehungsweise 12 Kurven, stoppt das Fahrzeug idealerweise für 
 die volle Punktzahl in dieser Disziplin.
-Aufgabe 2:
+#### Aufgabe 2:
 Zu Beginn ist das Programm ähnlich aufgebaut wie für die erste 
 Aufgabe. Es werden die benötigten Bibliotheken für die Sensoren 
 implementiert und alle Variablen deklariert.
