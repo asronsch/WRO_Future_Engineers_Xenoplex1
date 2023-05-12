@@ -16,16 +16,12 @@ Als Basis des Fahrzeugs dient das Chassis des autonomen
 Fahrzeugs von Fischertechnik. Der Mikrocontroller Arduino UNO 
 fungiert dabei als "Gehirn" des Fahrzeugs und steuert alle 
 Abläufe. Als Antrieb für den Roboter benutzen wir einen
-schwarzen Encodermotor von fischertechnik, welcher über die
+schwarzen Encodermotor von Fischertechnik, welcher über die
 H-Brücke l298n angesteuert wird. Diese versorgt mit Hilfe des 
 integrierten Spannungswandlers den Controller und alle 
 Sensoren mit der Betriebsspannung von 5 Volt. Zur Lenkung 
-verwenden wir einen handelsüblichen Servomotor. Links und 
-rechts besitzt das Fahrzeug je einen Ultraschallsensor HC-SR04. 
-Die Bilderkennung und -auswertung übernimmt die Kamera Pixy 
-V2.1 von CMU und Charmed Labs. Außerdem ist ein NiMH Akku von fischertechnik verbaut.
-benutzen wir eine PixyV2.1 und einen NiMH-Akku von 
-fischertechnik mit 8,4 Volt und 1800mAh. Um die Runden zu Zählen Benutzen wir einen Kompassensor.
+verwenden wir einen handelsüblichen Servomotor. Links und rechts besitzt das Fahrzeug je einen Ultraschallsensor HC-SR04. 
+Die Bilderkennung und -auswertung übernimmt die Kamera Pixy V2.1 von CMU und Charmed Labs. Außerdem ist ein NiMH Akku von fischertechnik mit 8,4 Volt und 1800mAh verbaut. Um die Runden zu Zählen Benutzen wir einen Kompasssensor.
 
 ## Programme:
 Für jede Aufgabe haben wir ein Programm entwickelt, welches 
