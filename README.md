@@ -13,7 +13,7 @@ diese Herausforderung zu bewältigen.
 
 ## Der Aufbau des Fahrzeugs: 
 Als Basis des Fahrzeugs dient das Chassis des autonomen 
-Fahrzeugs von fischertechnik. Der Mikrocontroller Arduino UNO 
+Fahrzeugs von Fischertechnik. Der Mikrocontroller Arduino UNO 
 fungiert dabei als "Gehirn" des Fahrzeugs und steuert alle 
 Abläufe. Als Antrieb für den Roboter benutzen wir einen
 schwarzen Encodermotor von fischertechnik, welcher über die
@@ -25,7 +25,7 @@ rechts besitzt das Fahrzeug je einen Ultraschallsensor HC-SR04.
 Die Bilderkennung und -auswertung übernimmt die Kamera Pixy 
 V2.1 von CMU und Charmed Labs. Außerdem ist ein NiMH Akku von fischertechnik verbaut.
 benutzen wir eine PixyV2.1 und einen NiMH-Akku von 
-fischertechnik mit 8,4 Volt und 1800mAh.
+fischertechnik mit 8,4 Volt und 1800mAh. Um die Runden zu Zählen Benutzen wir einen Kompassensor.
 
 ## Programme:
 Für jede Aufgabe haben wir ein Programm entwickelt, welches 
