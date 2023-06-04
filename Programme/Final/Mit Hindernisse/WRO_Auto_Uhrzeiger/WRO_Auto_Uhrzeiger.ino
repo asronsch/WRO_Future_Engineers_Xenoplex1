@@ -69,14 +69,6 @@ void setup()
 void loop(){
 
 
-signature = pixy.ccc.blocks[i].m_signature;
-  x = pixy.ccc.blocks[i].m_x;
-  y = pixy.ccc.blocks[i].m_y;
-  width = pixy.ccc.blocks[i].m_width;
-  height = pixy.ccc.blocks[i].m_height;
-  //index = pixy.ccc.blocks[i].m_index;
-  age = pixy.ccc.blocks[i].m_age;
-  i == signature;
 
   // grab blocks!
   pixy.ccc.getBlocks();
@@ -132,13 +124,13 @@ signature = pixy.ccc.blocks[i].m_signature;
       CompassKurve();
       Serial.println(Kurve);
     }else{
-      if(Ultraschal() < 50){
+      if(Ultraschal() < 65){
         myservo.write(110);
       }else{
-        if(Ultraschal() == 50){
+        if(Ultraschal() == 65){
           myservo.write(90);
         }else{
-          if(Ultraschal() > 50){
+          if(Ultraschal() > 65){
             myservo.write(70);
           }
         }  
@@ -150,13 +142,13 @@ signature = pixy.ccc.blocks[i].m_signature;
       if (Ultraschal2() + Ultraschal() >= 100){
         Kurve == false;
       }else{
-        if (Ultraschal2() < 50){
+        if (Ultraschal2() < 65){
           myservo.write(70);
         }else{
-          if (Ultraschal2() == 50){
+          if (Ultraschal2() == 65){
             myservo.write(90);
           }else{
-            if (Ultraschal2() > 50){
+            if (Ultraschal2() > 65){
               myservo.write(110);
             }else{}
           }
