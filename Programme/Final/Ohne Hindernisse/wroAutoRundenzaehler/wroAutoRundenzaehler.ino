@@ -76,17 +76,7 @@ Serial.begin(115200);
 
 Wire.begin();
 Serial.println("Waiting...");
-bool check = false;
-  while(!check){
-    if(digitalRead(4) == HIGH){
-      gegenUhrzeigersin = true;
-      check = true;
-    } else 
-    if(digitalRead(5) == HIGH){
-      gegenUhrzeigersin = false;
-      check = true;
-    }
-}
+
 Serial.println("Beginning!");
 
 }
@@ -103,7 +93,7 @@ Ultraschall2();
 
 //Fahrt
 
-  if(gegenUhrzeigersin) {
+  if(digitalRead(4) == HIGH) {
     Serial.print("Gegen Uhrzeiger");
     while(true){
       compass();
@@ -117,19 +107,19 @@ Ultraschall2();
         delay(10);
       } else 
       if(Ultraschall2() > 80){
-        myservo.write(servo_middle + 35);
+        myservo.write(servo_middle + 30);
         delay(10);
       }else{
-        if(Ultraschall2() > 25){
+        if(Ultraschall2() > 35){
         myservo.write(servo_middle + 10);
         delay(10);
         }else{
 
-          if(Ultraschall2() == 26){
+          if(Ultraschall2() == 35){
           myservo.write(servo_middle);
           delay(10);
           } else{
-            if(Ultraschall2() < 26){
+            if(Ultraschall2() < 35){
             myservo.write(servo_middle - 20);
             delay(10);
             }
@@ -159,18 +149,18 @@ Ultraschall2();
       }else{
         if(Ultraschall() > 80){
           delay(10);
-          myservo.write(servo_middle - 35);
+          myservo.write(servo_middle - 25);
         } else{
-          if(Ultraschall() > 25){
+          if(Ultraschall() > 35){
           myservo.write(servo_middle -10);
           delay(10);
           }else{
-            if(Ultraschall() == 25){
+            if(Ultraschall() == 35){
             myservo.write(servo_middle);
             delay(10);
             } else{
-              if(Ultraschall() < 25){
-              myservo.write(servo_middle + 10);
+              if(Ultraschall() < 35){
+              myservo.write(servo_middle + 20);
               delay(10);
              }else {
              return;
@@ -212,7 +202,7 @@ int compass(){
   return val;
 }
 int rundenzaehler(){
-  Serial.println(Scompass);
+  Serial.println(compassWerte);
   //Serial.println(rundensperre);
   if(compassWerte >= Scompass){
     if ((Scompass <= 5) && (compassWerte < 27)){
@@ -234,7 +224,7 @@ int rundenzaehler(){
 
 }
 bool Stopp() {
-  if (runde >= 3){
+  if (runde >= 10){
     while(sperre==true){
     Startsec = millis();
     sperre=false;
